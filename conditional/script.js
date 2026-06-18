@@ -114,24 +114,24 @@
 // }
 
 //Ternary operator
-condition ? true : false;
-12 > 15 ? console.log("hahahahah") : console.log("huhuhuhuuhuh");
+// condition ? true : false;
+// 12 > 15 ? console.log("hahahahah") : console.log("huhuhuhuuhuh");
 
-console.log(12 > 3 ? "hahaha" : "huhuhuuh");
+// console.log(12 > 3 ? "hahaha" : "huhuhuuh");
 
-//nested ternary operator
-let num = 0;
-console.log(num>0?"positive":num<0?"negative":"negative");
+// //nested ternary operator
+// let num = 0;
+// console.log(num>0?"positive":num<0?"negative":"negative");
+
+// //switch case statement
+// let name = "Sagar";
+// switch (name) {
+//     case "Dipesh": console.log("Welcome dipesh");
+//         break;
+//     case "Sagar": console.log("Welcome Sagar");
+//         break;
+//     default:console.log("invalid");
+
+// }
 
 
-//switch case statement
-let name = "Sagar";
-switch (name) {
-    case "Dipesh": console.log("Welcome dipesh");
-        break;
-    case "Sagar": console.log("Welcome Sagar");
-        break;
-    default:console.log("invalid");
-    
-    
-}
