@@ -1,0 +1,42 @@
+//loop
+//sum of n natural number
+// let input = prompt("Enter number");
+// if (input === null) {
+//   console.log("Cancelled");
+// } else {
+//   let num = Number(input);
+//   let sum = 0;
+//   if (isNaN(num)) {
+//     console.log("invalid input");
+//   } else if (num < 0) {
+//     console.log("Negative number");
+//   } else if (num === 0) {
+//     console.log("Number is zero");
+//   } else {
+//     for (let i = 1; i <= num; i++) {
+//       sum += i;
+//     }
+//     console.log("Sum =  " + sum);
+//   }
+// }
+
+//factorial of a number
+let input = prompt("Enter a number");
+let fact = 1;
+if (input === null) {
+  console.log("Cancelled");
+} else {
+  let num = Number(input);
+  if (isNaN(num)) {
+    console.log("Invalid input");
+  } else if (num < 0) {
+    console.log("Negative number");
+  } else if (num === 0) {
+    console.log("Number is zero");
+  } else {
+    for (let i = 1; i <= num; i++) {
+      fact *= i;
+    }
+    console.log("Factorial = " + fact);
+  }
+}
