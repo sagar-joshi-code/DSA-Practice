@@ -21,8 +21,28 @@
 // }
 
 //factorial of a number
-let input = prompt("Enter a number");
-let fact = 1;
+// let input = prompt("Enter a number");
+// let fact = 1;
+// if (input === null) {
+//   console.log("Cancelled");
+// } else {
+//   let num = Number(input);
+//   if (isNaN(num)) {
+//     console.log("Invalid input");
+//   } else if (num < 0) {
+//     console.log("Negative number");
+//   } else if (num === 0) {
+//     console.log("Number is zero");
+//   } else {
+//     for (let i = 1; i <= num; i++) {
+//       fact *= i;
+//     }
+//     console.log("Factorial = " + fact);
+//   }
+// }
+
+//factors of a number
+let input = prompt("Enter any number");
 if (input === null) {
   console.log("Cancelled");
 } else {
@@ -30,13 +50,15 @@ if (input === null) {
   if (isNaN(num)) {
     console.log("Invalid input");
   } else if (num < 0) {
-    console.log("Negative number");
+    console.log("Number is Negative");
   } else if (num === 0) {
     console.log("Number is zero");
   } else {
-    for (let i = 1; i <= num; i++) {
-      fact *= i;
+    for (let i = 1; i <= Math.floor(num / 2); i++) {
+      if (num % i === 0) {
+        console.log(i);
+      }
     }
-    console.log("Factorial = " + fact);
+    console.log(num);
   }
 }
