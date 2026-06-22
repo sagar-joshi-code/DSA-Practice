@@ -42,7 +42,30 @@
 // }
 
 //factors of a number
-let input = prompt("Enter any number");
+// let input = prompt("Enter any number");
+// if (input === null) {
+//   console.log("Cancelled");
+// } else {
+//   let num = Number(input);
+//   if (isNaN(num)) {
+//     console.log("Invalid input");
+//   } else if (num < 0) {
+//     console.log("Number is Negative");
+//   } else if (num === 0) {
+//     console.log("Number is zero");
+//   } else {
+//     for (let i = 1; i <= Math.floor(num / 2); i++) {
+//       if (num % i === 0) {
+//         console.log(i);
+//       }
+//     }
+//     console.log(num);
+//   }
+// }
+
+//prime number
+
+let input = prompt("Enter a number");
 if (input === null) {
   console.log("Cancelled");
 } else {
@@ -50,15 +73,22 @@ if (input === null) {
   if (isNaN(num)) {
     console.log("Invalid input");
   } else if (num < 0) {
-    console.log("Number is Negative");
+    console.log("Negative number");
+  } else if (num === 1) {
+    console.log("1 is not a prime  number");
   } else if (num === 0) {
     console.log("Number is zero");
   } else {
-    for (let i = 1; i <= Math.floor(num / 2); i++) {
+    let isPrime = true;
+    for (let i = 2; i <= Math.floor(num/2); i++){
       if (num % i === 0) {
-        console.log(i);
+        isPrime = false;
+        break;
       }
+      
     }
-    console.log(num);
+    console.log(isPrime);
+    
   }
 }
+
